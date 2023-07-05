@@ -1,0 +1,183 @@
+/*--====== CSS responsive ======--*/
+
+/* Media query for the latest iPad */
+@media only screen and (max-width: 788px){
+    body {
+        overflow-y: scroll;
+    }
+    .grid-container {
+        padding: 0;
+        max-width: 768px;
+        row-gap: 64px;
+    }
+
+    .hero h1 {
+        font-size: calc(var(--font-title)* .75);
+    }
+
+    p {
+        font-size: calc(var(--font-text)* .9);
+    }
+
+    .close-bar {
+        color: var(--i-neutral);
+    }
+
+    .background {
+        height: 200vh;
+    }
+
+    .menu-bar {
+        display: inline-flex;
+        margin-left: -12px;
+    }
+
+    .close-bar {
+        position: absolute;
+        font-size: 38px;
+        right: 3%;
+        top: 3%;
+        cursor: pointer;
+    }
+    
+    .nav__link {
+        display: block;
+    }
+
+    .nav__cta ul li a {
+        display: none;
+    }
+
+    .nav__link.active {
+        right: 0;
+        transition: right .3s;
+    }
+
+    .nav__link {
+        z-index: 10;
+        background: var(--bg-color);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .mobile__link li {
+        font-size: 42px;
+        margin-bottom: 24px;
+    }
+
+
+    .logo {
+        font-size: 1.75rem;
+    }
+
+    .nav__cta ul i {
+        font-size: 2.8rem;
+    }
+
+    .hero__img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 2.25rem;
+        overflow-x: hidden;
+    }
+
+    .hero__img__mobile {
+        display: inline-block;
+        width: calc( 1728px * 0.60 );
+        grid-column: span 3;
+    }
+    
+    .hero__img__desktop {
+        display: none;
+    }
+
+    .img-2 {
+        grid-column: 1 / span 5;
+        text-align: start;
+        justify-items: start;
+        position: relative;
+        right: 45%;
+    }
+
+    .img-1, .img-3 {
+        grid-column-start: 1 / span 5;
+        position: relative;
+        text-align: end;
+        left: 45%;
+        justify-items: end;
+    }
+
+    .mobile-slide-right {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+
+    .mobile-slide-left {
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    .mobile-slide-left.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .mobile-slide-right.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    // login and register queries
+    .modal__nav {
+        top: 1.1rem;
+        .theme {
+            font-size: 2rem;
+        }
+    }
+}
+/* Media query for the latest iPhone*/
+/* FIXME: the hero sass style */
+@media only screen and (max-width: 390px) {
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden !important;
+    }
+
+    .grid-container {
+        row-gap: 3rem;
+        max-width: 520px;
+    }
+
+    .hero h1 {
+        font-size: calc(var(--font-title)* .45);
+    }
+
+    p {
+        font-size: calc(var(--font-text)* .95);
+        margin-bottom: 12px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: .80rem;
+    }
+
+    .hero__img__mobile {
+        width: calc(1728px / 2.5 );
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .carousel-wrapper {
+      display: none;
+    }
+  }

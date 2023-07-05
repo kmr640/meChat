@@ -1,0 +1,71 @@
+@use '../abstracts/variables' as *;
+
+
+:root {
+  /* Colors */
+  #{$input-border}: hsl(0, 0%, 80%);
+  #{$bg-color}: hsl(0, 0%, 95.7%);
+  #{$font-title-neutral}: hsl(220.9, 39.3%, 11%);
+  #{$font-title-accent}: linear-gradient(90deg, rgba(124,196,250,1) 0%, rgba(122,157,252,1) 50%, rgba(122,115,255,1) 100%);
+  #{$font-text-grey}: hsl(216.9, 19.1%, 26.7%);
+  #{$font-logo-neutral}: hsl(0, 0%, 0%);
+  #{$a-neutral}: hsl(0, 0%, 0%);
+  #{$i-neutral}: hsl(0, 0%, 0%);
+  #{$font-btn-white}: hsl(205.7, 100%, 98.6%);
+  #{$font-btn-black}: hsl(220.9, 39.3%, 11%);
+  #{$btn-1-neutral}: hsl(220.9, 39.3%, 11%);
+  #{$btn-outline}: hsl(220.9, 39.3%, 11%);
+  #{$btn-2-accent}: hsl(220.9, 39.3%, 11%);
+  #{$stroke-carousel}: rgba(0, 0, 0, 0.2);
+
+  /* Typography */
+  --font-family: 'Inter', sans-serif;
+  --font-title: 3.6rem;
+  --font-title-w: 700;
+  --font-logo: 1.25rem;
+  --font-logo-w: 600;
+  --font-text: 1rem;
+  --font-text-w: 400;
+  --font-btn-size: 1rem;
+  --font-btn-w: 400;
+
+  /* other */
+  --grid-col-3: span 3;
+  --img-stroke: hsl(0, 0%, 0%);
+
+/* spacing */
+
+@each $value in $margin-values {
+  $i: index($margin-values, $value);
+  --mt-#{$i}:  #{$value}rem;
+  --mb-#{$i}:  #{$value}rem;
+  --ml-#{$i}:  #{$value}rem;
+  --mr-#{$i}:  #{$value}rem;
+}
+
+@each $value in $padding-values {
+  $i: index($padding-values, $value);
+  --pt-#{$i}:  #{$value}rem;
+  --pb-#{$i}:  #{$value}rem;
+  --pl-#{$i}:  #{$value}rem;
+  --pr-#{$i}:  #{$value}rem;
+}
+  /* Define other shared variables and functions here */
+}
+
+/* spacing classes */
+@each $value in $margin-values {
+  $i: index($margin-values, $value);
+  .mt-#{$i} { margin-top: var(--mt-#{$i}); }
+  .mb-#{$i} { margin-bottom: var(--mb-#{$i}); }
+  .ml-#{$i} { margin-left: var(--ml-#{$i}); }
+  .mr-#{$i} { margin-right: var(--mr-#{$i}); }
+}
+
+@each $value in $padding-values {
+  $i: index($padding-values, $value);
+  .pt-#{$i} { padding-top: var(--pt-#{$i}); }
+  .pb-#{$i} { padding-bottom: var(--pb-#{$i}); }
+  .pl-#{$i} { padding-left: var(--pl-#{$i}); }
+  .pr-#{$i} { padding-right: var(--pr-#{$i}); }
+}

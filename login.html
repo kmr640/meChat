@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.2.0/remixicon.css" integrity="sha512-eRbcr5kt0vg2Kgl5BBKIqXoZ0f1lpe4ImM8GyzJN7mrhUR57xPh2JX+5Ra8zlh5QZWxEVQW9MOfMaCEEjnMcMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="grid-container">
+      <header>
+        <nav class="pr-1 pl-1">
+          <div class="logo mt-2">
+            <a href="/index.html">
+              <i class="ri-reply-fill"></i> meChat </a>
+          </div>
+          <div class="modal__nav">
+            <i class="ri-contrast-2-line theme"></i>
+          </div>
+        </nav>
+      </header>
+      <section class="pr-1 pl-1 container">
+        <div class="modal">
+          <div class="input__form">
+            <form action="/signup" method="POST" onsubmit='redirect();return false;'>
+              <h1 class="pb-1">Sign In</h1>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="abc@gmail.com">
+              <br>
+              <br>
+              <label for="password">Password:</label>
+              <input class="" type="password" id="password" name="password" required placeholder="Password">
+              <br>
+              <br>
+              <a href="register.html" class="account__true">Already Registered? Click here</a>
+              <br>
+              <label for="submit"></label>
+              <input type="submit" value="submit">
+              <hr class="hr-text mb-1" data-content="OR">
+              <p>Try demo account</p>
+              <div class="demo mt-1">
+                <div class="avatar">
+                  <input aria-label="demo account one" class="avatar__image" type="image" name="submit" src="/img/jonathan-grey-icon.png">
+                </div>
+                <div class="avatar">
+                  <input class="avatar__image" type="image" name="submit" src="/img/Lyanne-chen-100px.png">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="carousel-wrapper">
+            <div class="carousel-container">
+              <div class="carousel">
+                <div class="image-one"></div>
+                <div class="image-two"></div>
+                <div class="image-three"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="assets/js/mobile-slide.js" defer></script>
+  <script src="assets/js/theme.js" defer></script>
+  <script src="assets/js/modal.js" defer></script>
+</html>

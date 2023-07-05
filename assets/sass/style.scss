@@ -1,0 +1,32 @@
+// abstracts
+// @import '/assets/sass/abstracts/variables';
+// @import '/assets/sass/abstracts/colors';
+// @import '/assets/sass/abstracts/typography';
+// @import '/assets/sass/abstracts/animations';
+// @import '/assets/sass/abstracts/media-query';
+@use 'abstracts';
+
+//pages 
+@use 'pages';
+
+//base
+@use 'base';
+
+//theme
+@use 'theme';
+
+//components (btn, nav)
+@use 'components';
+
+//utilities (margin, padding etc)
+@use 'utilities';
+
+
+// TODO: V3
+  /* password filter show with eye
+  adjust input border
+  check for @ in strpos add border color
+  make new carousel theme slide images 
+  make chat.html
+  change image names
+  */

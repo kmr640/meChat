@@ -1,10 +1,9 @@
 const menuBar = document.querySelector('.menu-bar');
 const closeBar = document.querySelector('.close-bar');
-const navbarLinks = document.querySelector('.nav-link');
+const navbarLinks = document.querySelector('.nav__link');
 
 menuBar.addEventListener('click', () => {
     navbarLinks.classList.add('active');
-    
 });
 
 closeBar.addEventListener('click', () => {
@@ -20,3 +19,12 @@ window.addEventListener('resize', () => {
       });
     }
   });
+
+  // TODO: V3
+  /* password filter show with eye
+  adjust input border
+  check for @ in strpos add border color
+  make new carousel theme slide images 
+  make chat.html*/
+
+

@@ -1,0 +1,12 @@
+.grid-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 96px;
+    padding: 0 24px;
+}
+
+header, .hero, .hero__img {
+    grid-column: var(--grid-col-3);
+}
