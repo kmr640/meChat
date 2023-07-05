@@ -6,8 +6,8 @@
 ## Description
 Developed from scratch
 
-- Landingpage Using HTML, CSS and Vanilla JavaScript.
-- Contains animations when scrolling.
+- Landingpage Using HTML, CSS, Sass and Vanilla JavaScript.
+- Contains animations when scrolling and showcase on modal page.
 - Includes a dark and light mode.
 - Vanilla-tilt JS libary used
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
